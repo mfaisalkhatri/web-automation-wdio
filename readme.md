@@ -2,16 +2,32 @@
 
 ## :question: What is this Repository about?
 
-- This repo contains example code for the following : 
+- This repo contains example code for the following demo website: 
 - [Simple form Demo page](https://www.lambdatest.com/selenium-playground/simple-form-demo) on [LambdaTest's Selenium Playground](https://www.lambdatest.com/selenium-playground/)
 - WebdriverIO is used as web automation framework
-- Tests are run on Chrome browser
+- This repo showcases how to run the tests on 
+    - Chrome browser on local machine
+    - Chrome browser on LambdaTest cloud grid
 
 ## Running the Tests
+1. Clone the repository in your local machine by running the following command: 
 
-1. To run the test from command line use the following command:
+    - `git clone git@github.com:mfaisalkhatri/web-automation-wdio.git`
 
-    - `npm run wdio`
+1. Install the dependencies by running the following command: 
+
+    - `npm install`
+
+1. To run the test on local machine use the following command:
+
+    - `npm run test_local`
+
+1. To run the test on LambdaTest cloud grid
+    - Make sure to add the LambdaTest Username and accesskey in the environment variable
+    - Checkout the `lambdatest.conf.js` file for the configuration details
+
+    To run the tests use the following command: 
+      - `npm run test_cloud`
 
 ## 🧬 Need Assistance?
 
