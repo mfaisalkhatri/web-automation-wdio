@@ -10,21 +10,24 @@ exports.config = {
       }
     ]
   ],
-  user: process.env.LT_USERNAME,
-  key: process.env.LT_ACCESS_KEY,
-  buildName: "WebdriverIO demo test on LambdaTest cloud grid",
   specs: [ './test/specs/**/*.js'],
   exclude: [],
-
-  capabilities: [
-    {
-      "LT:Options": {
-      browserName: "chrome",
-      version: "latest",
-      name: "Test Simple form",
-      build: "WebDriver Selenium Demo"
+  reporters: ['spec'],
+  
+  capabilities: [{
+    "browserName": "Chrome",
+    "browserVersion": "125",
+    "LT:Options": {
+      "username": process.env.LT_USERNAME,
+      "accessKey": process.env.LT_ACCESS_KEY,
+      "platformName": "Windows 10",
+      "project": "WebdriverIO demo",
+      "build": "Simple Form demo",
+      "name": "First WebdriverIO test on LambdaTest",
+      "selenium_version": "4.0.0",
+      "w3c": true
     }
-    }],
+  }],  
   logLevel: "info",
   coloredLogs: true,
   screenshotPath: "./errorShots/",
