@@ -26,7 +26,8 @@ exports.config = {
     ],
     // Patterns to exclude.
     exclude: [
-        './test/specs/test.simpleformdemo.js'
+        './test/specs/test.simpleformdemo.js',
+        './test/specs/registration-test.js'
         // 'path/to/excluded/files'
     ],
     //
@@ -53,7 +54,11 @@ exports.config = {
     //
     capabilities: [{
         browserName: 'chrome'
-    }],
+    },{
+        browserName: 'firefox'
+    }
+
+],
 
     //
     // ===================

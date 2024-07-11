@@ -1,4 +1,4 @@
-const { $ } = require("@wdio/globals");
+import { $ } from "@wdio/globals";
 
 class ContactPage {
   get contactText() {
