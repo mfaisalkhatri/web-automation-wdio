@@ -1,8 +1,8 @@
-const { browser } = require("@wdio/globals");
+import {browser} from "@wdio/globals";
 
-module.exports = class Page {
-
-  open(path) {
-    return browser.url(`https://www.lambdatest.com/selenium-playground/${path}`);
+export default class Page {
+  async open(path) {
+    //return browser.url(`https://www.lambdatest.com/selenium-playground/${path}`);
+     await browser.url(`https://practicesoftwaretesting.com/auth/${path}`);
   }
-};
+}
