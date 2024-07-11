@@ -22,9 +22,11 @@ exports.config = {
     //
     specs: [
         './test/specs/**/*.js'
+        //'./test/specs/test.contact.js'
     ],
     // Patterns to exclude.
     exclude: [
+        './test/specs/test.simpleformdemo.js'
         // 'path/to/excluded/files'
     ],
     //
