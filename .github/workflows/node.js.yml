@@ -33,7 +33,7 @@ jobs:
         cache: 'npm'
  
     - name : Install Chrome
-      uses: browser-actions/setup-chrome@latest
+      uses: browser-actions/setup-chrome@v1
 
 
     - name: Install packages
