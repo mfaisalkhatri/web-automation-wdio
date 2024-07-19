@@ -26,9 +26,7 @@ exports.config = {
     ],
     // Patterns to exclude.
     exclude: [
-        './test/specs/test.simpleformdemo.js',
-        // './test/specs/registration-test.js',
-        './test/specs/test.contact.js'
+        './test/specs/registration-test.js',
         // 'path/to/excluded/files'
     ],
     //
@@ -54,7 +52,10 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        browserName: 'chrome'
+        browserName: 'chrome',
+        'goog:chromeOptions': {
+            args: ['headless', 'disable-gpu']
+        }
     },
     // {
     //     browserName: 'firefox'
