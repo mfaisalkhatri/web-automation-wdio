@@ -1,5 +1,7 @@
-const {expect}  = require('@wdio/globals');
-const SimpleFormPage = require("../pageobjects/simpleform.page");
+import {expect} from '@wdio/globals';
+
+import SimpleFormPage from "../pageobjects/simpleform.page";
+
 
 describe ('LambdaTest Selenium Playground website', () => {
 it('should check the simple input field', async() => {

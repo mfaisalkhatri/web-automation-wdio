@@ -1,11 +1,10 @@
-const { $ } = require("@wdio/globals");
-const Page = require('./page');
+import { $ } from "@wdio/globals";
+import Page  from "./page";
 
 class SimpleFormPage extends Page {
   get messageField() {
     return $("#user-message");
   }
-
   get checkValueBtn() {
     return $("#showInput");
   }
@@ -19,9 +18,8 @@ class SimpleFormPage extends Page {
     await this.checkValueBtn.click();
   }
 
-  open(){
-    return super.open('simple-form-demo');
+  async open() {
+    await super.open("simple-form-demo");
   }
 }
-
-module.exports = new SimpleFormPage();
+export default new SimpleFormPage();
