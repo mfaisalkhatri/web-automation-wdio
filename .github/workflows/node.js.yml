@@ -31,6 +31,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        
+    steps:
+  - uses: browser-actions/setup-chrome@v1
+  - run: chrome --version
+
+    steps: Install packages and run the test
     - run: npm install
     - run: npm run test_local
 
