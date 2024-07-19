@@ -31,7 +31,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
- 
+
+    - name: Create screenshots dir
+      working-directory: ${{ github.workspace }}
+      run: mkdir screenshots
+
     - name : Install Chrome
       uses: browser-actions/setup-chrome@v1
 
