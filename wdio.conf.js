@@ -27,9 +27,6 @@ exports.config = {
     // Patterns to exclude.
     exclude: [
         './test/specs/registration-test.js',
-        './test/specs/test.checkboxes.js',
-        './test/specs/test.contact.js',
-        './test/specs/test.simpleformdemo.js'
         // 'path/to/excluded/files'
     ],
     //
@@ -56,9 +53,9 @@ exports.config = {
     //
     capabilities: [{
         browserName: 'chrome'
-        // 'goog:chromeOptions': {
-        //     args: ['headless', 'disable-gpu']
-        //}
+        'goog:chromeOptions': {
+            args: ['headless', 'disable-gpu']
+        }
     },
     // {
     //     browserName: 'firefox'
