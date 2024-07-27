@@ -22,7 +22,6 @@ exports.config = {
     //
     specs: [
         './test/specs/**/*.js'
-        //'./test/specs/test.contact.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -59,6 +58,9 @@ exports.config = {
     },
     // {
     //     browserName: 'firefox'
+    // }
+    // {
+    //     browserName: 'MicrosoftEdge'
     // }
 
 ],
