@@ -21,8 +21,7 @@ exports.config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        //'./test/specs/**/*.js'
-        './test/specs/test.javascript-alert.js'
+        './test/specs/**/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -59,6 +58,9 @@ exports.config = {
     },
     // {
     //     browserName: 'firefox'
+    // }
+    // {
+    //     browserName: 'MicrosoftEdge'
     // }
 
 ],
