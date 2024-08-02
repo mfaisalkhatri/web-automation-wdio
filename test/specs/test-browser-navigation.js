@@ -1,6 +1,6 @@
 const { browser } = require("@wdio/globals");
 
-describe("Learning WebdriverIO", () => {
+describe("Learning WebdriverIO - Handling Browser Navigations", () => {
     it("should perform browser navigations", async () => {
         await browser.url("https://www.lambdatest.com/selenium-playground/");
 

@@ -1,7 +1,7 @@
 import { expect } from "@wdio/globals";
 import { alertIsPresent, visibilityOf } from "wdio-wait-for";
 
-describe("Learning to handle JavaScript ALerts using WebdriverIO", () => {
+describe("Learning WebdriverIO - Handling JS Alerts", () => {
   it("should accept the JS ALert", async () => {
     await browser.url(
       "https://www.lambdatest.com/selenium-playground/javascript-alert-box-demo"
@@ -52,7 +52,7 @@ describe("Learning to handle JavaScript ALerts using WebdriverIO", () => {
     });
     const alertText = await browser.getAlertText();
     await expect(alertText).toEqual("Press a button!");
-    
+
     await browser.dismissAlert();
 
     const confirmMessage = $("#confirm-demo");
@@ -76,7 +76,7 @@ describe("Learning to handle JavaScript ALerts using WebdriverIO", () => {
 
     const promptMessage = $("#prompt-demo");
     await expect(promptMessage).toHaveText("You have entered 'My name is Faisal' !");
-  
+
   });
 
   it("should dismiss the JS prompt Alert", async () => {
@@ -94,5 +94,5 @@ describe("Learning to handle JavaScript ALerts using WebdriverIO", () => {
     await browser.dismissAlert();
     const promptMessage = $("#prompt-demo");
     await !expect(promptMessage).toBeDisplayedInViewport();
-});
+  });
 });

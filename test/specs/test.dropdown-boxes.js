@@ -1,6 +1,6 @@
 const { browser } = require("@wdio/globals");
 
-describe("Learning to handle dropdown boxes in WebdriverIO", () => {
+describe("Learning WebdriverIO - Handling Dropdown Boxes", () => {
   it("should select a value from single dropdown box using Visible Text", async () => {
     await browser.url(
       "https://www.lambdatest.com/selenium-playground/select-dropdown-demo"

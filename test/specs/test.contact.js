@@ -4,7 +4,7 @@ const ContactFormPage = require("../pageobjects/contact.page");
 describe("Practices of Software Testing website", () => {
   it("should test the contact form", async () => {
 
-     function getTimeStamp() {
+    function getTimeStamp() {
       let date = new Date();
       let dateLocale = date.getTime();
       return dateLocale;
