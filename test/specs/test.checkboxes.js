@@ -1,6 +1,6 @@
 const { browser } = require("@wdio/globals");
 
-describe("Learning WebdriverIO", () => {
+describe("Learning WebdriverIO - Handling Checkboxes", () => {
   it("should tick the checkbox", async () => {
     await browser.url("https://the-internet.herokuapp.com/checkboxes");
 
