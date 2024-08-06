@@ -53,7 +53,7 @@ exports.config = {
       browserName: "chrome",
       "goog:chromeOptions": {
         args: ["headless", "disable-gpu"],
-      },
+      }
     },
     // {
     //   browserName: "firefox",
@@ -61,12 +61,12 @@ exports.config = {
     //     args: ["-headless"],
     //   },
     // },
-    {
-      browserName: "MicrosoftEdge",
-      "ms:edgeOptions": {
-        args: ["--headless"],
-      },
-    },
+    // {
+    //   browserName: "MicrosoftEdge",
+    //   "ms:edgeOptions": {
+    //     args: ["--headless"],
+    //   },
+   // },
   ],
 
   //
