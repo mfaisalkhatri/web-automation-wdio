@@ -2,7 +2,10 @@ const { browser } = require("@wdio/globals");
 
 describe("Learning WebdriverIO - Radio Buttons", () => {
     it("should tick the Male radio button", async () => {
-        await browser.url("https://www.lambdatest.com/selenium-playground/radiobutton-demo");
+        await browser.url("https://www.lambdatest.com/selenium-playground/");
+
+        const radioButtonDemoLink = await $('=Radio Buttons Demo');
+        await radioButtonDemoLink.click();
 
         let pageHeader = await $("<h1 />");
         await expect(pageHeader).toHaveText("Radio button Demo");
@@ -10,7 +13,7 @@ describe("Learning WebdriverIO - Radio Buttons", () => {
         const maleRadioBtn = await $("input[value=Male][name=optradio]");
         await maleRadioBtn.click();
 
-        await expect(browser.isElementSelected(maleRadioBtn)).toBeTruthy();
+        await expect(maleRadioBtn).toBeSelected();
 
         const getValueBtn = await $('#buttoncheck');
         await getValueBtn.click();
@@ -37,8 +40,6 @@ describe("Learning WebdriverIO - Radio Buttons", () => {
         await expect(outputText).toHaveText("Radio button 'Female' is checked");
 
         const maleRadioBtn = await $("input[value=Male][name=optradio]");
-
-        await !expect(browser.isElementSelected(maleRadioBtn)).toBeTruthy();
-
+        await expect(maleRadioBtn).not.toBeSelected();
     });
 });
