@@ -22,6 +22,8 @@ exports.config = {
   //
   specs: [
     "./test/specs/**/*.js",
+    //'./test/specs/test.double-click.js'
+  
   ],
   // Patterns to exclude.
   exclude: [
@@ -55,7 +57,7 @@ exports.config = {
       browserName: "chrome",
       "goog:chromeOptions": {
         args: ["headless", "disable-gpu"],
-      }
+      },
     },
     {
       browserName: "firefox",
@@ -68,7 +70,7 @@ exports.config = {
     //   "ms:edgeOptions": {
     //     args: ["--headless"],
     //   },
-   // },
+    // },
   ],
 
   //
@@ -149,7 +151,6 @@ exports.config = {
     ui: "bdd",
     timeout: 60000,
   },
-
   //
   // =====
   // Hooks
