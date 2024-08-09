@@ -22,8 +22,6 @@ exports.config = {
   //
   specs: [
     "./test/specs/**/*.js",
-    //'./test/specs/test.double-click.js'
-  
   ],
   // Patterns to exclude.
   exclude: [
