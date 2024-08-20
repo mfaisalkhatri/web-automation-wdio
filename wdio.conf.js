@@ -21,7 +21,8 @@ exports.config = {
   // of the config file unless it's absolute.
   //
   specs: [
-    "./test/specs/**/*.js",
+    "./test/specs/**/*.js"
+  //"./test/specs/test.multiple-windows.js"
   ],
   // Patterns to exclude.
   exclude: [
@@ -57,12 +58,12 @@ exports.config = {
         args: ["headless", "disable-gpu"],
       },
     },
-    {
-      browserName: "firefox",
-      "moz:firefoxOptions": {
-        args: ["-headless"],
-      },
-    },
+    // {
+    //   browserName: "firefox"
+    //   "moz:firefoxOptions": {
+    //     args: ["-headless"],
+    //   },
+    // },
     // {
     //   browserName: "MicrosoftEdge",
     //   "ms:edgeOptions": {
