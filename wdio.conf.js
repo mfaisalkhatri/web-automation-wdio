@@ -22,7 +22,6 @@ exports.config = {
   //
   specs: [
     "./test/specs/**/*.js"
-  //"./test/specs/test.multiple-windows.js"
   ],
   // Patterns to exclude.
   exclude: [
