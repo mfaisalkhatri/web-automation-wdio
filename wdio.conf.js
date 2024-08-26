@@ -21,9 +21,7 @@ exports.config = {
   // of the config file unless it's absolute.
   //
   specs: [
-    //"./test/specs/**/*.js"
-    './test/specs/test.htmltables.js'
-  //"./test/specs/test.multiple-windows.js"
+    "./test/specs/**/*.js"
   ],
   // Patterns to exclude.
   exclude: [
@@ -55,9 +53,9 @@ exports.config = {
   capabilities: [
     {
       browserName: "chrome",
-      // "goog:chromeOptions": {
-      //   args: ["headless", "disable-gpu"],
-      // },
+      "goog:chromeOptions": {
+        args: ["headless", "disable-gpu"],
+      },
     },
     // {
     //   browserName: "firefox"
