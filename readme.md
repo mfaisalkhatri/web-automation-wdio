@@ -3,11 +3,44 @@
 ## :question: What is this Repository about?
 
 - This repo contains example code for the following demo website: 
-- [Simple form Demo page](https://www.lambdatest.com/selenium-playground/simple-form-demo) on [LambdaTest's Selenium Playground](https://www.lambdatest.com/selenium-playground/)
+    - [LambdaTest's Selenium Playground](https://www.lambdatest.com/selenium-playground/)
+    - [The-internet](https://the-internet.herokuapp.com/)
+    - [Practice Software Testing](https://practicesoftwaretesting.com/)
+    - [Demo QA](https://demoqa.com/)
+
 - WebdriverIO is used as web automation framework
 - This repo showcases how to run the tests on 
     - Chrome browser on local machine
     - Chrome browser on LambdaTest cloud grid
+    - Firefox browser on local machine
+    - Microsoft Edge browser on local machine
+
+- This repo covers example to run tests in parallel across different browsers
+- GitHub Actions has been setup for this project, which runs the tests as soon as code is pushed
+
+## Scenarios covered in the example tests using WebdriverIO
+1. Performing browser navigation
+1. Ticking and Unticking checkboxes
+1. Performing double click action on a WebElement
+1. Selecting values using single and multi-select dropdown boxes.
+1. Handling JavaScript Alerts covering the following:
+    1. Getting Text from alert, 
+    1. Accept Alert
+    1. Dismiss Alert
+    1. Enter text and Confirm alert
+1. Working with HTML tables - getting value from rows and columns
+    1. Fetch records from rows and columns in table
+    1. Printing the data from the table using For Loop
+    1. Searching a record from the table and verifying it 
+    1. Sort the table records on a particular column and verify the column values
+1. Performing Mouse hover over a WebElement
+1. Handling multiple windows
+1. Ticking and Unticking Radio buttons
+1. Performing Right click action
+1. Typing values in the textbox
+1. Capturing Screenshot of the web page
+
+
 
 ## Running the Tests
 1. Clone the repository in your local machine by running the following command: 
@@ -37,15 +70,7 @@
 
 ## :writing_hand: Blog Links
 
-- [Selenium Manager in Selenium 4.11.0: New Features and Improvements](https://medium.com/@iamfaisalkhatri/selenium-manager-in-selenium-4-11-0-new-features-and-improvements-lambdatest-761593a7f009)
-- [Selenium 4 WebDriver Hierarchy: A Detailed Explanation](https://medium.com/@iamfaisalkhatri/selenium-4-webdriver-hierarchy-a-detailed-explanation-lambdatest-18771c5fd3e9)
-- [Understanding CSS Selectors in Selenium](https://medium.com/@iamfaisalkhatri/understanding-css-selectors-in-selenium-pcloudy-blog-3e4b09672264)
-- [End to End testing using Selenium WebDriver and Java](https://medium.com/@iamfaisalkhatri/end-to-end-testing-using-selenium-webdriver-and-java-4ff8667716ca)
-- [Writing Selenium Web Automation tests in Fluent way!](https://medium.com/@iamfaisalkhatri/writing-selenium-web-automation-tests-in-fluent-way-864db95ee67a)
-- [How To Automate Shadow DOM In Selenium WebDriver?](https://medium.com/@iamfaisalkhatri/how-to-automate-shadow-dom-in-selenium-webdriver-lambdatest-blog-3884698b995)
-- [How to setup GitHub Actions for Java with Maven project?](https://mfaisalkhatri.github.io/2022/04/26/githubactions-for-java-maven-project/)
-- [How to Automate ServiceNow with Selenium](https://medium.com/@iamfaisalkhatri/how-to-automate-servicenow-with-selenium-511e41172161)
-- [Cross browser testing in Selenium WebDriver](https://medium.com/@iamfaisalkhatri/cross-browser-testing-in-selenium-webdriver-pcloudy-blog-46e9d70fa13a)
+- [How to Run WebdriverIO Tests: Getting Started Tutorial](https://www.lambdatest.com/blog/webdriverio-tutorial-run-your-first-automation-script/)
 
 ### :thought_balloon: Checkout the blogs related to Testing on
 
