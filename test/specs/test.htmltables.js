@@ -97,6 +97,7 @@ describe("Learning WebdriverIO - Handling data from HTML Tables", () => {
     await pageOnNavigationBtn.click();
 
     const nameColumnHeader = await $("#example th:nth-child(1)");
+    await nameColumnHeader.waitForClickable({ timeout: 3000 });
     await nameColumnHeader.click();
     const sortedNames = await getNamesFromPage();
 
