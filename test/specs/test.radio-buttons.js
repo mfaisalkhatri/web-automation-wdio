@@ -1,4 +1,4 @@
-const { browser } = require("@wdio/globals");
+import {browser} from "@wdio/globals";
 
 describe("Learning WebdriverIO - Radio Buttons", () => {
     it("should tick the Male radio button", async () => {

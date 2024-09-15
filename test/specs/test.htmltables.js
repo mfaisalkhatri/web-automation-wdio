@@ -1,4 +1,4 @@
-const { browser } = require("@wdio/globals");
+import {browser} from "@wdio/globals";
 
 describe("Learning WebdriverIO - Handling data from HTML Tables", () => {
   it("should fetch the record from first row and perform assertion", async () => {

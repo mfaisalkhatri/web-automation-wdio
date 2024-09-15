@@ -1,5 +1,5 @@
-const { browser } = require("@wdio/globals");
-const ContactFormPage = require("../pageobjects/contact.page");
+import {browser} from "@wdio/globals";
+import ContactFormPage from "../pageobjects/contact.page.js";
 
 describe("Practices of Software Testing website", () => {
   it("should test the contact form", async () => {

@@ -1,4 +1,4 @@
-const { browser } = require("@wdio/globals");
+import {browser} from "@wdio/globals";
 
 describe("Learning WebdriverIO - Right Click", () => {
   it("should perform right click", async () => {

@@ -1,4 +1,4 @@
-const { browser } = require("@wdio/globals");
+import  {browser}  from "@wdio/globals";
 
 describe("Learning WebdriverIO - Handling Checkboxes", () => {
   it("should tick the checkbox", async () => {

@@ -42,4 +42,4 @@ class ContactPage {
     await this.sendBtn.click();
   }
 }
-module.exports = new ContactPage();
+export default new ContactPage();

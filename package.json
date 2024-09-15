@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "wdio tutorial project",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test_cloud": "wdio run ./lambdatest.conf.js",
     "test_local": "wdio run ./wdio.conf.js"
@@ -24,5 +25,8 @@
     "@wdio/spec-reporter": "^8.38.0",
     "wdio-lambdatest-service": "^2.1.3",
     "wdio-wait-for": "^3.0.11"
+  },
+  "dependencies": {
+    "wdio-html-nice-reporter": "^8.1.6"
   }
 }
