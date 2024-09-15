@@ -1,4 +1,4 @@
-const { browser } = require("@wdio/globals");
+import {browser} from "@wdio/globals";
 
 describe("Learning WebdriverIO - Handling Dropdown Boxes", () => {
   it("should select a value from single dropdown box using Visible Text", async () => {

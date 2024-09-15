@@ -1,4 +1,4 @@
-const { browser } = require("@wdio/globals");
+import {browser} from "@wdio/globals";
 
 describe("Learning WebdriverIO - Handle multiple windows", () => {
   it("should switch to a new window and verify its title", async () => {

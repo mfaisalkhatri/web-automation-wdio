@@ -1,5 +1,5 @@
 import { $ } from "@wdio/globals";
-import Page  from "./page";
+import Page  from "./page.js";
 
 class SimpleFormPage extends Page {
   get messageField() {
@@ -22,4 +22,5 @@ class SimpleFormPage extends Page {
     await super.open("simple-form-demo");
   }
 }
+
 export default new SimpleFormPage();

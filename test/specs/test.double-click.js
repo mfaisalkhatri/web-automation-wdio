@@ -1,4 +1,4 @@
-const { browser } = require("@wdio/globals");
+import { browser } from "@wdio/globals";
 
 describe("Learning WebdriverIO - Double click a button", () => {
   it("should double click on a button", async () => {
